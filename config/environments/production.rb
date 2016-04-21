@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # Require for devise. Remember to change localhost:3000, to actual application host 
+  config.action_mailer.default_url_options = { host => 'rails-etsydemo-2016.herokuapp.com' }
 end
